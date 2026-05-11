@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:80px;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050505;
+    color:#f5f5f5;
+    overflow-x:hidden;
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.70),
+            rgba(0,0,0,0.80)
+        ),
+        url("assets/images/hero-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    z-index:-2;
+}
+
+main{
+    width:100%;
+}
+
+section{
+    min-height:100vh;
+    padding:140px 8%;
+    position:relative;
+}
+
+h1,h2,h3,h4{
+    font-family:'Cinzel',serif;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+    cursor:none;
+}
+
+button{
+    border:none;
+    outline:none;
+    cursor:none;
+    font-family:'Inter',sans-serif;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#050505;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#8f6b29;
+    border-radius:20px;
+}
+
+::selection{
+    background:#b48a3c;
+    color:#000;
+}
+#particles{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+}
+
+body{
+    cursor:none;
+}
+
+.custom-cursor{
+    width:18px;
+    height:18px;
+    border:1px solid rgba(200,169,107,0.8);
+    border-radius:50%;
+    position:fixed;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    z-index:9999;
+    backdrop-filter:blur(2px);
+    transition:
+        transform 0.08s linear,
+        width 0.3s ease,
+        height 0.3s ease,
+        background 0.3s ease;
+}
+
+.custom-cursor.active{
+    width:42px;
+    height:42px;
+    background:rgba(180,138,60,0.12);
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(70px);
+}
+
+*{
+    cursor:none !important;
+}
+
+.global-candles{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    overflow:hidden;
+}
+
+.candle{
+    position:absolute;
+    opacity:0.42;
+    animation:float 10s ease-in-out infinite;
+    filter:
+        drop-shadow(0 0 12px rgba(255,180,80,0.08));
+}
+
+.candle-1{
+    top:18%;
+    right:8%;
+    width:85px;
+}
+
+.candle-2{
+    top:72%;
+    right:14%;
+    width:65px;
+    animation-delay:2s;
+}
+
+.candle-3{
+    top:32%;
+    left:5%;
+    width:70px;
+    animation-delay:4s;
+}
+
+#footer{
+    padding:35px 20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.06);
+    background:rgba(0,0,0,0.25);
+}
+
+#footer p{
+    color:#bdbdbd;
+    letter-spacing:1px;
+    font-size:0.9rem;
+}
+
+.spell-card,
+.project-card,
+.timeline-content,
+.achievement-card,
+.contact-form{
+    position:relative;
+}
+
+.spell-card::after,
+.project-card::after,
+.timeline-content::after,
+.achievement-card::after,
+.contact-form::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(200,169,107,0.08),
+            transparent 45%
+        );
+
+    opacity:0;
+
+    transition:0.5s ease;
+
+    pointer-events:none;
+}
+
+.spell-card:hover::after,
+.project-card:hover::after,
+.timeline-content:hover::after,
+.achievement-card:hover::after,
+.contact-form:hover::after{
+    opacity:1;
+}
+
+#audio-toggle{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(10,10,10,0.6);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    color:#d6b16d;
+    font-size:1.2rem;
+    z-index:999;
+    transition:0.4s ease;
+}
+#audio-toggle:hover{
+    transform:translateY(-4px);
+    background:#b48a3c;
+    color:#111;
+}
+
+.primary-btn,
+.secondary-btn,
+.project-buttons a,
+.certificate-btn,
+.contact-form button,
+.social-icon{
+    position:relative;
+    overflow:hidden;
+}
+
+.primary-btn::before,
+.secondary-btn::before,
+.project-buttons a::before,
+.certificate-btn::before,
+.contact-form button::before,
+.social-icon::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.18),
+            transparent
+        );
+
+    transition:0.7s ease;
+}
+
+.primary-btn:hover::before,
+.secondary-btn:hover::before,
+.project-buttons a:hover::before,
+.certificate-btn:hover::before,
+.contact-form button:hover::before,
+.social-icon:hover::before{
+    left:120%;
+}
+::selection{
+    background:#b48a3c;
+    color:#111;
+}

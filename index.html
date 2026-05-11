@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Krish Agarwalla | Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <meta name="description" content="Krish Agarwalla | Wizard-inspired cinematic developer portfolio showcasing projects, skills, achievements, and immersive web experiences.">
+    <meta name="keywords" content="Krish Agarwalla, developer portfolio, Java developer, frontend developer, cinematic portfolio">
+    <meta name="author" content="Krish Agarwalla">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/spellbook.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/journey.css">
+    <link rel="stylesheet" href="css/achievement.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="loader">
+        <audio id="wand-sound">
+            <source src="assets/audio/wand.mp3" type="audio/mp3">
+        </audio>
+        <div class="loader-overlay"></div>
+        <div class="loader-content">
+            <p class="loader-top-text">The Marauder's Archive</p>
+            <h1 class="loader-title">I solemnly swear that I am up to no good.</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+    <div id="particles"></div>
+    <div class="global-candles">
+        <img src="assets/images/candles/candle1.png" class="candle candle-1">
+        <img src="assets/images/candles/candle2.png" class="candle candle-2">
+        <img src="assets/images/candles/candle3.png" class="candle candle-3">
+    </div>
+    <div class="custom-cursor"></div>
+    <nav id="navbar">
+
+        <div class="nav-logo">
+            Mischief Managed
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#hero">Home</a>
+            </li>
+            <li>
+                <a href="#spellbook">Spellbook</a>
+            </li>
+            <li>
+                <a href="#projects">Potions</a>
+            </li>
+            <li>
+                <a href="#journey">Journey</a>
+            </li>
+            <li>
+                <a href="#achievements">Achievements</a>
+            </li>
+            <li>
+                <a href="#contact">Owl Post</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">The Enchanted Developer Archive</p>
+                <h1>KRISH AGARWALLA</h1>
+                <h2>Wizard of Code & Digital Craft</h2>
+                <p class="hero-description">Transforming ideas into immersive digital experiences through creativity, logic, and a touch of magic.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn">
+                        Explore Potions
+                    </a>
+                    <a href="#contact" class="secondary-btn">
+                        Send Owl
+                    </a>
+                    <a href="assets/resume/KrishAgarwalla_Resume.pdf" download class="secondary-btn">Resume</a>
+                </div>
+            </div>
+        </section>
+        <section id="spellbook" class="reveal">
+            <div class="section-heading">
+                <p class="section-tag">The Ancient Spellbook</p>
+                <h2>Magical Abilities</h2>
+            </div>
+            <div class="spellbook-grid">
+                <div class="spell-card">
+                    <div class="spell-icon">
+                        <img src="assets/icons/spell.svg">
+                    </div>
+                    <h3>Lumos</h3>
+                    <p>Frontend development with immersive and responsive interfaces.</p>
+                </div>
+                <div class="spell-card">
+                    <div class="spell-icon">
+                        <img src="assets/icons/potion.svg">
+                    </div>
+                    <h3>Protego</h3>
+                    <p>Backend logic, authentication, and secure system architecture.</p>
+                </div>
+                <div class="spell-card">
+                    <div class="spell-icon">
+                        <img src="assets/icons/map.svg">
+                    </div>
+                    <h3>Apparate</h3>
+                    <p>Smooth deployment and scalable digital experiences.</p>
+                </div>
+                <div class="spell-card">
+                    <div class="spell-icon">
+                        <img src="assets/icons/owl.svg">
+                    </div>
+                    <h3>Reparo</h3>
+                    <p>Debugging, optimization, and fixing broken systems creatively.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="reveal">
+            <div class="section-heading">
+                <p class="section-tag">Potion Laboratory</p>
+                <h2>Crafted Experiments</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/potion-bottle.png">
+                    </div>
+                    <div class="project-content">
+                        <h3>Queueless India</h3>
+                        <p>
+                            A smart queue management and appointment booking platform designed to reduce waiting times in public and private service sectors. The system enables users to book slots online, track queue status in real time, and receive notifications, improving customer convenience and operational efficiency through a streamlined digital experience.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
+                            <span>React</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/krish-agarwalla/queueless-india.git" target="_blank">GitHub</a>
+                            <a href="https://queueless-backend-lsqe.onrender.com/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/potion-bottle.png">
+                    </div>
+                    <div class="project-content">
+                        <h3>CallOut- A Disaster Management Website</h3>
+                        <p>
+                           A disaster management and emergency response platform designed to help people report incidents, request emergency assistance, and access real-time updates during natural or man-made disasters. The platform focuses on improving communication, quick response coordination, and public safety through a centralized digital system.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/krish-agarwalla/CallOut.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/potion-bottle.png">
+                    </div>
+                    <div class="project-content">
+                        <h3>Students Store Billing System</h3>
+                        <p>
+                            Inventory and billing platform with barcode integration,
+                            stock tracking, and streamlined retail management.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/krish-agarwalla/Students-Store-Billing-System.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="journey" class="reveal">
+            <div class="section-heading">
+                <p class="section-tag">
+                    The Hogwarts Journey
+                </p>
+                <h2>
+                    Path of Growth
+                </h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">
+                            2023
+                        </span>
+                        <h3>
+                            CV Raman Global University
+                        </h3>
+                        <p>
+                            Began the journey in Computer Science and Engineering,
+                            exploring software development and problem solving.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">
+                            2024
+                        </span>
+                        <h3>
+                            Java Development & Projects
+                        </h3>
+                        <p>
+                            Built multiple Java-based systems including management,
+                            billing, and structured data-driven applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">
+                            2024
+                        </span>
+                        <h3>
+                            BonV Technology Internship
+                        </h3>
+                        <p>
+                            Worked as an Integration Intern, where I assisted in the integration and testing of drone systems with software and hardware components. Contributed to system setup, troubleshooting, and coordination during implementation processes, gaining practical exposure to real-time integration workflows and emerging technologies.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">
+                            2025
+                        </span>
+                        <h3>
+                            BonV Technology Internship
+                        </h3>
+                        <p>
+                            Worked as a Design Intern, contributing to the design and execution process of ongoing projects. Collaborated with team members on planning, coordination, and implementation tasks while gaining hands-on experience in project workflow management, problem-solving, and professional communication in a corporate environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">
+                            2026
+                        </span>
+                        <h3>
+                            Placement & Advanced Development
+                        </h3>
+                        <p>
+                            Strengthening development skills, DSA preparation,
+                            and building immersive digital experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="achievements" class="reveal">
+            <div class="section-heading">
+                <p class="section-tag">
+                    Hall of Recognition
+                </p>
+                <h2>
+                    Titles & Achievements
+                </h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>
+                        Joint Secretary
+                    </h3>
+                    <p>
+                        Department of CSE, C. V. Raman Global University
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h3>
+                        Volunteer(Co- Lead Photography & PR)
+                    </h3>
+                    <p>
+                        NSS C. V. Raman Global University, Odisha
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h3>
+                        Volunteer
+                    </h3>
+                    <p>
+                        All India Marwadi Yuva Manch
+                    </p>
+                </div>
+                <div class="achievement-card certificate-card">
+                    <h3>
+                        Internship Completion Certificate
+                    </h3>
+                    <p>
+                        Verified internship completion from BonV Technology.
+                    </p>
+                    <a 
+                        href="https://www.linkedin.com/posts/krish-agarwalla-420bb3280_internship-experience-grateful-share-7413218054609747969-WDBK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESFVZgB4DL331Tb7XyLrdX10vB0vQvJyBI"
+                        target="_blank"
+                        class="certificate-btn"
+                    >
+                        View Certificate
+                    </a>
+                </div>
+                <div class="achievement-card certificate-card">
+                    <h3>
+                        Internship Completion Certificate
+                    </h3>
+                    <p>
+                        Verified internship completion from OrcadeHub LLP.
+                    </p>
+                    <a 
+                        href="https://www.linkedin.com/posts/krish-agarwalla-420bb3280_internship-completion-certificate-activity-7458738247087710208-9Jd1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESFVZgB4DL331Tb7XyLrdX10vB0vQvJyBI"
+                        target="_blank"
+                        class="certificate-btn"
+                    >
+                        View Certificate
+                    </a>
+                </div>
+                <div class="achievement-card certificate-card">
+                    <h3>
+                        Course Completion Certificate
+                    </h3>
+                    <p>
+                        Verified <strong>Smart Coder</strong> Course completion from Smart Interviews.
+                    </p>
+                    <a 
+                        href="https://smartinterviews.in/certificate/666c66f6"
+                        target="_blank"
+                        class="certificate-btn"
+                    >
+                        View Certificate
+                    </a>
+                </div>
+                <div class="achievement-card certificate-card">
+                    <h3>
+                        Course Completion Certificate
+                    </h3>
+                    <p>
+                        Verified <strong>Google UX Design</strong> Course completion from Coursera.
+                    </p>
+                    <a 
+                        href="https://www.coursera.org/account/accomplishments/specialization/RY7KA22MLAIR"
+                        target="_blank"
+                        class="certificate-btn"
+                    >
+                        View Certificate
+                    </a>
+                </div>
+                <div class="achievement-card certificate-card">
+                    <h3>
+                        Course Completion Certificate
+                    </h3>
+                    <p>
+                        Verified <strong>Introduction to Cybersecurity</strong> Course completion from Cisco.
+                    </p>
+                    <a 
+                        href="https://www.credly.com/badges/c3d2fa3c-dd83-4cc7-869d-c5d78f5543ab/linked_in_profile"
+                        target="_blank"
+                        class="certificate-btn"
+                    >
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="reveal">
+            <div class="section-heading">
+                <p class="section-tag">
+                    Owl Post
+                </p>
+                <h2>
+                    Send a Message
+                </h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>
+                        Let's Create Something Magical
+                    </h3>
+                    <p>
+                        Whether it's collaboration, opportunity,
+                        or simply a conversation about technology and creativity,
+                        the archive is always open.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span>Email</span>
+                            <p>
+                                krishagarwalla24@gmail.com
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <span>Location</span>
+                            <p>
+                                Bhubaneswar, Odisha
+                            </p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/krish-agarwalla" target="_blank">
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/krish-agarwalla/" target="_blank">
+                            GitHub
+                        </a>
+                        <a href="https://www.instagram.com/krisssshhh_/" target="_blank">
+                            Instagram
+                        </a>
+                        <a href="https://leetcode.com/u/krishagarwalla/" target="_blank">
+                            LeetCode
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/krishagarwalla24" target="_blank">
+                            Hackerrank
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="6" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">
+                        Send Owl
+                    </button>
+                    <p class="form-message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div id="audio-toggle">♫</div>
+    <audio id="bg-audio" loop>
+        <source src="assets/audio/ambience.mp3" type="audio/mp3">
+    </audio>
+    <footer id="footer">
+        <p>
+            Mischief Managed © 2026 | Crafted by Krish Agarwalla
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script> -->
+    <script src="script.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/spellbook.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/owlpost.js"></script>
+    <script src="js/eastereggs.js"></script>
+
+</body>
+</html>

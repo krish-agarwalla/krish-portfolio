@@ -1,0 +1,93 @@
+#achievements{
+    position:relative;
+}
+
+.achievements-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.achievement-card{
+    position:relative;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.03),
+            rgba(255,255,255,0.01)
+        );
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    overflow:hidden;
+
+    transition:
+        transform 0.5s ease,
+        border 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.achievement-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:url("../assets/textures/parchment-texture.jpg");
+
+    background-size:cover;
+
+    opacity:0.025;
+
+    pointer-events:none;
+}
+
+.achievement-card:hover{
+    transform:translateY(-8px);
+
+    border:1px solid rgba(200,169,107,0.22);
+
+    box-shadow:
+        0 0 40px rgba(180,138,60,0.08);
+}
+
+.achievement-card h3{
+    font-size:1.5rem;
+    margin-bottom:18px;
+    color:#f5f1e8;
+}
+
+.achievement-card p{
+    color:#d2d2d2;
+    line-height:1.8;
+}
+
+.certificate-btn{
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 26px;
+
+    border-radius:40px;
+
+    background:#b48a3c;
+
+    color:#111;
+
+    font-weight:600;
+
+    transition:0.4s ease;
+}
+
+.certificate-btn:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 0 25px rgba(180,138,60,0.35);
+}

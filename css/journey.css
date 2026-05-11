@@ -1,0 +1,114 @@
+#journey{
+    position:relative;
+}
+
+.timeline{
+    position:relative;
+    max-width:950px;
+    margin:auto;
+    padding-top:40px;
+}
+
+.timeline-line{
+    position:absolute;
+    top:0;
+    left:28px;
+    width:2px;
+    height:100%;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(200,169,107,0.2),
+            rgba(200,169,107,0.7),
+            rgba(200,169,107,0.2)
+        );
+}
+
+.timeline-item{
+    position:relative;
+    display:flex;
+    gap:35px;
+    margin-bottom:80px;
+}
+
+.timeline-dot{
+    min-width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#c8a96b;
+    margin-top:10px;
+
+    box-shadow:
+        0 0 20px rgba(200,169,107,0.6);
+}
+
+.timeline-content{
+    position:relative;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.03),
+            rgba(255,255,255,0.01)
+        );
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    overflow:hidden;
+
+    transition:
+        transform 0.5s ease,
+        border 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.timeline-content::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:url("../assets/textures/parchment-texture.jpg");
+
+    background-size:cover;
+
+    opacity:0.025;
+
+    pointer-events:none;
+}
+
+.timeline-content:hover{
+    transform:translateY(-8px);
+
+    border:1px solid rgba(200,169,107,0.22);
+
+    box-shadow:
+        0 0 40px rgba(180,138,60,0.08);
+}
+
+.timeline-year{
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:#c8a96b;
+
+    letter-spacing:2px;
+
+    font-size:0.9rem;
+}
+
+.timeline-content h3{
+    font-size:1.7rem;
+    margin-bottom:18px;
+    color:#f5f1e8;
+}
+
+.timeline-content p{
+    color:#d3d3d3;
+    line-height:1.9;
+}
