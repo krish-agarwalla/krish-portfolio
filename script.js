@@ -20,7 +20,7 @@ async function updateVisitorCount(){
         );
         const data = await response.json();
         document.getElementById("visitor-count")
-        .innerText = data.count;
+        .innerText = data.data.up_count;
     }
     catch(error){
         document.getElementById("visitor-count")
