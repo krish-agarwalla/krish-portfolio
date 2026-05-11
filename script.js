@@ -13,3 +13,18 @@ audioToggle.addEventListener("click", () => {
         isPlaying = false;
     }
 });
+async function updateVisitorCount(){
+    try{
+        const response = await fetch(
+            "https://counterapi.dev/api/krishagarwalla/portfolio/up"
+        );
+        const data = await response.json();
+        document.getElementById("visitor-count")
+        .innerText = data.count;
+    }
+    catch(error){
+        document.getElementById("visitor-count")
+        .innerText = "--";
+    }
+}
+updateVisitorCount();

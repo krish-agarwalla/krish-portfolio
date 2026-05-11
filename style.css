@@ -292,3 +292,16 @@ body{
     background:#b48a3c;
     color:#111;
 }
+#visitor-counter{
+    margin-top:14px;
+
+    color:#b48a3c;
+
+    font-size:0.92rem;
+
+    letter-spacing:1px;
+}
+
+#visitor-count{
+    color:#f5f1e8;
+}
