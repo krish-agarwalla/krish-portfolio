@@ -14,27 +14,17 @@ audioToggle.addEventListener("click", () => {
     }
 });
 async function updateVisitorCount(){
-
     try{
-
         const response = await fetch(
-            "https://api.counterapi.dev/v2/krish-agarwallas-team/wizard-archive-visits/up"
+            "https://api.counterapi.dev/v2/krish-agarwallas-team-4065/wizard-archive-visits/up"
         );
-
         const data = await response.json();
-
         document.getElementById("visitor-count")
         .innerText = data.data.count;
-
     }
-
     catch(error){
-
         document.getElementById("visitor-count")
         .innerText = "--";
-
     }
-
 }
-
 updateVisitorCount();
